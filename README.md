@@ -12,17 +12,23 @@ $ npm install idp_sdk
 ### 1. To Extract Fields in Synchronous Way
 If you just need to do one file at a time
 
-  var Client=require('idp_sdk')
-  var fs=require('fs')
+    var Client=require('idp_sdk')
+    var fs=require('fs')
 
-  var c=new Client({token:'your-token',region:'your-region'});
-  c.createTask({file:fs.createReadStream('path-to-the-file'),fileType:'file-type'})
-  .then((task)=>c.taskID(task))
-  .then((task_id)=>{
-      return c.poll(task_id,0)
-  })
-  .then((result)=>{console.log(result)})
+    var c=new Client({token:'your-token',region:'your-region'});
+    c.createTask({file:fs.createReadStream('path-to-the-file'),fileType:'file-type'})
+    .then((task)=>c.taskID(task))
+    .then((task_id)=>{
+        return c.poll(task_id,0)
+    })
+    .then((result)=>{console.log(result)})
 
 ### 2. To Extract Fields in Asynchronous Way
 If you need to do a batch of files
 
+    var Client=require('idp_sdk')
+    var fs=require('fs')
+
+    var c=new Client({token:'your-token',region:'your-region'});
+    c.runSimpleTask({file:fs.createReadStream('path-to-the-file'),fileType:'file-type'})
+    .then((result)=>{console.log(result)})
