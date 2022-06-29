@@ -7,7 +7,7 @@ The documentation for the 6Estates IDP API can be found via https://idp-sea.6est
 The node.js library documentation can be found via https://idp-sdk-doc.6estates.com/python/.
 
 ## Setup
-$ npm install idp_sdk
+    $ npm install idp_sdk
 ## Usage
 ### 1. To Extract Fields in Synchronous Way
 If you just need to do one file at a time
