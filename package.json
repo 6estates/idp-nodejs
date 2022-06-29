@@ -1,0 +1,19 @@
+{
+  "name": "idp_sdk",
+  "version": "0.1.0",
+  "description": "IDP SDK node.js version",
+  "main": "idp_sdk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6estates/idp-nodejs.git"
+  },
+  "author": "guo sihan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/6estates/idp-nodejs/issues"
+  },
+  "homepage": "https://github.com/6estates/idp-nodejs#readme"
+}
