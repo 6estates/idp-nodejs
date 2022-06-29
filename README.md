@@ -9,8 +9,9 @@ The node.js library documentation can be found via https://idp-sdk-doc.6estates.
 ## Setup
     $ npm install idp_sdk
 ## Usage
-### 1. To Extract Fields in Synchronous Way
-If you just need to do one file at a time
+### 1. To Extract Fields in Asynchronous Way
+If you need to do a batch of files
+
 
     var Client=require('idp_sdk')
     var fs=require('fs')
@@ -23,8 +24,8 @@ If you just need to do one file at a time
     })
     .then((result)=>{console.log(result)})
 
-### 2. To Extract Fields in Asynchronous Way
-If you need to do a batch of files
+### 2. To Extract Fields in Synchronous Way
+If you just need to do one file at a time
 
     var Client=require('idp_sdk')
     var fs=require('fs')
